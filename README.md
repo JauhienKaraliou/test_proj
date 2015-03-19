@@ -1,5 +1,6 @@
 branches:
 - master
+- newbranch1
 
 $ curl -LsS http://symfony.com/installer > symfony.phar
 $ sudo mv symfony.phar /usr/local/bin/symfony
