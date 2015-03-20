@@ -1,0 +1,3 @@
+services:
+    index_controller:
+        class: JK\WebsiteBundle\Controller\IndexController
