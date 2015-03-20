@@ -1,0 +1,3 @@
+jk_common_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: JKCommonBundle:Default:index }

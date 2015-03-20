@@ -1,0 +1,3 @@
+services:
+  abstract_controller:
+       class: JK\CommonBundle\Controller\AbstractController
