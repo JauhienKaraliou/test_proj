@@ -1,6 +1,7 @@
 branches:
 - master
 - newbranch1
+- newbranch2
 
 $ curl -LsS http://symfony.com/installer > symfony.phar
 $ sudo mv symfony.phar /usr/local/bin/symfony
@@ -17,6 +18,8 @@ $ sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 $ sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 
 $ php app/console cache:clear
+
+$ php app/console generate:bundle --namespace=JK/CommonBundle --format=yml
 
 $ php app/console doctrine:schema:update --force
 
