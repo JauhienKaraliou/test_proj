@@ -3,14 +3,14 @@
 namespace JK\WebsiteBundle\Controller;
 
 use JK\CommonBundle\Controller\AbstractController;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 class IndexController extends AbstractController
 {
     private $templating;
 
-    public function __construct($templating)
+    public function __construct( EngineInterface $templating)
     {
         $this->templating = $templating;
     }
