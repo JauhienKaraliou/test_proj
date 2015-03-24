@@ -2,6 +2,7 @@ branches:
 - master
 - newbranch1
 - newbranch2
+- newbranch3it
 
 $ curl -LsS http://symfony.com/installer > symfony.phar
 $ sudo mv symfony.phar /usr/local/bin/symfony
