@@ -19,6 +19,5 @@ class IndexController extends AbstractController
         return $this->templating->renderResponse(
             'JKWebsiteBundle:Default:index.html.twig',
             array('name' => $name));
-        //return $this->render('JKWebsiteBundle:Default:index.html.twig', array('name' => $name));
     }
 }
