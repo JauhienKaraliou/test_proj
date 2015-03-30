@@ -19,4 +19,3 @@ $ sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 $ php app/console cache:clear
 
 $ php app/console doctrine:schema:update --force
-
