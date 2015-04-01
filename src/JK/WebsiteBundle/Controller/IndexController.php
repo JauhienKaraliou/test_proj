@@ -3,17 +3,19 @@
 namespace JK\WebsiteBundle\Controller;
 
 use JK\CommonBundle\Controller\AbstractController;
-use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
+/**
+ * @Route(service="ws.index_controller")
+ */
 class IndexController extends AbstractController
 {
-    private $templating;
-
-    public function __construct( EngineInterface $templating)
-    {
-        $this->templating = $templating;
-    }
+    /**
+     * @Route("/")
+     * @param string $name
+     * @return mixed
+     */
     public function indexAction($name='Jauhien')
     {
         return $this->templating->renderResponse(
