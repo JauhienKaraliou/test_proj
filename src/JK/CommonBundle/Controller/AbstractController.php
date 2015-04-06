@@ -2,8 +2,8 @@
 
 namespace JK\CommonBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 
 /**
  * Class AbstractController
@@ -32,6 +32,4 @@ class AbstractController
     {
         return $this->templating;
     }
-
-
 }

@@ -1,5 +1,5 @@
 parameters:
-    jk.website.controller.index.class: JK\WebsiteBundle\Controller\IndexController
+    jk.website.controller_index.class: JK\WebsiteBundle\Controller\IndexController
 
 services:
     jk.common.controller_abstract:
@@ -8,5 +8,5 @@ services:
             - [setTemplate, ["@templating"]]
 
     jk.website.controller_index:
-        class: %jk.website.controller.index.class%
+        class: %jk.website.controller_index.class%
         parent: jk.common.controller_abstract

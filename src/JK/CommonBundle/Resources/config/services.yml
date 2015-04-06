@@ -1,3 +1,6 @@
+parameters:
+    jk.common.controller_abstract.class: JK\CommonBundle\Controller\AbstractController
+
 services:
   jk.common.controller_abstract:
-       class: JK\CommonBundle\Controller\AbstractController
+       class: %jk.common.controller_abstract.class%
