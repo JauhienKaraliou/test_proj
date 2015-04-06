@@ -17,8 +17,8 @@ class IndexController extends AbstractController
      * @param string $name
      * @return mixed
      */
-    public function indexAction($name = 'Jauhien')
+    public function indexAction($name = 'Jauhiennnn')
     {
-        return array('name' => $name);
+        return ['name' => $name];
     }
 }

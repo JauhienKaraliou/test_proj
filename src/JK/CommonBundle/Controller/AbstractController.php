@@ -32,4 +32,6 @@ class AbstractController
     {
         return $this->templating;
     }
+
+
 }
