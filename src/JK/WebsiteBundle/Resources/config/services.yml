@@ -1,4 +1,12 @@
+parameters:
+    jk.website.controller.index.class: JK\WebsiteBundle\Controller\IndexController
+
 services:
-    ws.index_controller:
-        class: JK\WebsiteBundle\Controller\IndexController
-        arguments: ["@templating"]
+    jk.common.controller_abstract:
+        abstract: true
+        calls:
+            - [setTemplate, ["@templating"]]
+
+    jk.website.controller_index:
+        class: %jk.website.controller.index.class%
+        parent: jk.common.controller_abstract

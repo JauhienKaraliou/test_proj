@@ -2,24 +2,23 @@
 
 namespace JK\WebsiteBundle\Controller;
 
-use JK\CommonBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use JK\CommonBundle\Controller\AbstractController;
 
 /**
- * @Route(service="ws.index_controller")
+ * @Route(service="jk.website.controller_index")
  */
 class IndexController extends AbstractController
 {
     /**
      * @Route("/")
+     * @Template("JKWebsiteBundle:Default:index.html.twig")
      * @param string $name
      * @return mixed
      */
-    public function indexAction($name='Jauhien')
+    public function indexAction($name = 'Jauhien')
     {
-        return $this->templating->renderResponse(
-            'JKWebsiteBundle:Default:index.html.twig',
-            array('name' => $name));
+        return array('name' => $name);
     }
 }
