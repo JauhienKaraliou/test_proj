@@ -3,4 +3,7 @@ parameters:
 
 services:
   jk.common.controller_abstract:
-       class: %jk.common.controller_abstract.class%
+      abstract: true
+      class: %jk.common.controller_abstract.class%
+      calls:
+                  - [setTemplate, ["@templating"]]

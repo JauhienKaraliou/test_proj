@@ -26,7 +26,7 @@ class AbstractController
     }
 
     /**
-     * @return mixed
+     * @return EngineInterface
      */
     public function getTemplate()
     {

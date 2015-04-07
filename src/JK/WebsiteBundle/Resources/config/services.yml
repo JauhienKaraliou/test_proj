@@ -2,11 +2,8 @@ parameters:
     jk.website.controller_index.class: JK\WebsiteBundle\Controller\IndexController
 
 services:
-    jk.common.controller_abstract:
-        abstract: true
-        calls:
-            - [setTemplate, ["@templating"]]
-
     jk.website.controller_index:
         class: %jk.website.controller_index.class%
+        lazy: true
         parent: jk.common.controller_abstract
+
