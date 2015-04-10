@@ -1,3 +1,7 @@
 jk_website:
     resource: "@JKWebsiteBundle/Resources/config/routing.yml"
     prefix:   /
+
+jk_contact_us:
+    resource: "@JKContactUsBundle/Resources/config/routing.yml"
+    prefix:   /

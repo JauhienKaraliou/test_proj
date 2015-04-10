@@ -1,0 +1,3 @@
+jk.contact_us.controller.index:
+    resource: "@JKContactUsBundle/Controller/"
+    type: annotation
