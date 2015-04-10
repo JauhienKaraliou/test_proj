@@ -6,4 +6,4 @@ services:
       abstract: true
       class: %jk.common.controller_abstract.class%
       calls:
-                  - [setTemplate, ["@templating"]]
+          - [setTemplate, ["@templating"]]

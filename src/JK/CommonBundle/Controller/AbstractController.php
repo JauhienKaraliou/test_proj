@@ -4,6 +4,7 @@ namespace JK\CommonBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
+use Symfony\Component\HttpFoundation\Response as Response;
 
 /**
  * Class AbstractController
@@ -31,5 +32,16 @@ class AbstractController
     public function getTemplate()
     {
         return $this->templating;
+    }
+
+    /**
+     * @param $view
+     * @param array $parameters
+     * @param Response $response
+     * @return Response
+     */
+    public function render($view, array $parameters = array(), Response $response = null)
+    {
+        return $this->getTemplate()->renderResponse($view, $parameters, $response);
     }
 }

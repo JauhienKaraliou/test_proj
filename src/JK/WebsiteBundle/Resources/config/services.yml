@@ -6,4 +6,3 @@ services:
         class: %jk.website.controller_index.class%
         lazy: true
         parent: jk.common.controller_abstract
-
