@@ -23,4 +23,3 @@ $ php app/console cache:clear
 $ php app/console generate:bundle --namespace=JK/CommonBundle --format=yml
 
 $ php app/console doctrine:schema:update --force
-

@@ -1,4 +1,8 @@
+parameters:
+    jk.website.controller_index.class: JK\WebsiteBundle\Controller\IndexController
+
 services:
-    ws.index_controller:
-        class: JK\WebsiteBundle\Controller\IndexController
-        arguments: ["@templating"]
+    jk.website.controller_index:
+        class: %jk.website.controller_index.class%
+        lazy: true
+        parent: jk.common.controller_abstract

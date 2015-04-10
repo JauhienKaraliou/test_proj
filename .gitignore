@@ -8,4 +8,5 @@
 /build/
 /vendor/
 /bin/
-LICENSE
+/composer.phar
+/web/bundles/
