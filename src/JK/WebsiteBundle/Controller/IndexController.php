@@ -18,10 +18,9 @@ class IndexController extends AbstractController
     /**
      * @Route("/view")
      * @param Request $request
-     * @param string $name
      * @return Response
      */
-    public function indexAction(Request $request, $name = 'Jauhiennnn')
+    public function indexAction(Request $request)
     {
         $session = $request->getSession();
         $data = $session->get('contactData');

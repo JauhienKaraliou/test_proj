@@ -10,6 +10,10 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 
 class ContactType extends AbstractType
 {
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
@@ -24,6 +28,9 @@ class ContactType extends AbstractType
             ->getForm();
     }
 
+    /**
+     * @return string
+     */
     public function getName()
     {
         return 'jk_website_contact';
