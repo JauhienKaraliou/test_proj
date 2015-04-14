@@ -1,8 +1,0 @@
-parameters:
-    jk.contact_us.controller_index.class: JK\ContactUsBundle\Controller\IndexController
-
-services:
-    jk.contact_us.controller_index:
-        class: %jk.contact_us.controller_index.class%
-        lazy: true
-        parent: jk.common.controller_abstract
