@@ -7,3 +7,4 @@ services:
       class: %jk.common.controller_abstract.class%
       calls:
           - [setTemplate, ["@templating"]]
+          - [setFormFactory, ["@form.factory"]]

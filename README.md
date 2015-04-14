@@ -2,6 +2,7 @@ branches:
 - master
 - newbranch1
 - newbranch2
+- newbranch3it
 
 $ curl -LsS http://symfony.com/installer > symfony.phar
 $ sudo mv symfony.phar /usr/local/bin/symfony
@@ -22,3 +23,5 @@ $ php app/console cache:clear
 $ php app/console generate:bundle --namespace=JK/CommonBundle --format=yml
 
 $ php app/console doctrine:schema:update --force
+
+$ php app/console container:debug

@@ -1,8 +1,14 @@
 parameters:
     jk.website.controller_index.class: JK\WebsiteBundle\Controller\IndexController
+    jk.website.form.type_contact.class: JK\WebsiteBundle\Form\ContactType
 
 services:
     jk.website.controller_index:
         class: %jk.website.controller_index.class%
         lazy: true
         parent: jk.common.controller_abstract
+
+    jk.website.form.contact:
+        class: %jk.website.form.type_contact.class%
+        tags:
+            - { name: form.type, alias: jk_website_contact }

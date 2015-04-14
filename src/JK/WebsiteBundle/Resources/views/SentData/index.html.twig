@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello {{ name }}!{% endblock %}
+{% block body %}Hello {{ name }}!<br/>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message text</th>
+        </tr>
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ email }}</td>
+            <td>{{ text }}</td>
+        </tr>
+    </table>
+    <br/>
+    Thank you!
+{% endblock %}
