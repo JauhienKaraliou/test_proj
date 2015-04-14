@@ -1,0 +1,9 @@
+parameters:
+    jk.common.controller_abstract.class: JK\CommonBundle\Controller\AbstractController
+
+services:
+  jk.common.controller_abstract:
+      abstract: true
+      class: %jk.common.controller_abstract.class%
+      calls:
+          - [setTemplate, ["@templating"]]

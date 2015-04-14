@@ -1,0 +1,3 @@
+jk.website.controller.index:
+    resource: "@JKWebsiteBundle/Controller/"
+    type: annotation
